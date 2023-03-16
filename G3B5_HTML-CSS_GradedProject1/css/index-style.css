@@ -244,17 +244,17 @@ footer {
 
 }
 
-@media(max-width: 1471px) {
+@media(min-width: 1471px) {
     header {
-        width: 1471px;
+        max-width: 1471px;
     }
 
     .menu-bar {
-        width: 1471px;
+        max-width: 1471px;
     }
 
     .offer-slider {
-        width: 1471px;
+        max-width: 1471px;
 
     }
 
@@ -263,13 +263,28 @@ footer {
     }
 
     footer {
-        width: 1471px;
+       max-width: 1471px;
     }
 }
 
-@media(max-width: 670) {
-    .product-wrapper {
-        background-color: #6262e0;
+
+
+@media(min-width:390px) and ( max-width:414px) {
+    header{
+        min-width: 390px;
+        max-width:414px
     }
 
+    .menu-bar{
+        min-width: 390px;
+        max-width:414px
+    }
+
+
+    .product-wrapper {
+        display: flex;
+        min-width: 390px;
+        max-width:414px;
+        flex-direction: column;
+    }
 }

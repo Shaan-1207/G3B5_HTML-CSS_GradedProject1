@@ -1,4 +1,4 @@
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -47,6 +47,8 @@ input{
     margin: .5rem;
 }
 
+
+
 .test-checkbox{
     margin-left: -5rem;
     cursor: pointer;
@@ -56,6 +58,8 @@ input[type = "radio"],[ type ="checkbox"]{
     width: 50px;
     margin-left: 5rem;
 }
+
+
 
 
 
@@ -104,6 +108,54 @@ input[type="time"]{
 
 
 #btn{
-    margin-left: 38rem;
+    margin-left: 40rem;
     margin-top: -1rem;
+}
+
+@media screen and (min-width: 1024px){
+    form{
+        margin: 2.2rem 2rem 2rem 3rem;
+    }
+    input{
+        min-width: 8rem;
+        max-width: 14rem;
+    }
+
+    h3{
+        font-size: medium;
+    }
+    .form-container{
+        background-size: 38rem;
+    }
+}
+@media screen and (min-width: 716px) and (max-width:1340px){
+    form{
+        margin: 2.2rem 2rem 2rem 3rem;
+    }
+    input{
+        min-width: 8rem;
+        max-width: 14rem;
+    }
+
+    h3{
+        font-size: medium;
+    }
+    .form-container{
+        background-position: top;
+        background-size: 40rem 20rem; 
+        margin-left: 2rem;
+        min-height: 70rem;
+    }
+
+    form{
+        margin-top: 22rem;
+        position: absolute;
+        
+    }
+
+    #btn{
+        margin-left: 15rem;
+        margin-top: -1rem;
+    }
+
 }
