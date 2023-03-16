@@ -103,7 +103,7 @@ h1 {
 .offer-slider {
     border: 2px solid steelblue;
     height: 60vh;
-    background-image: url(img/Animation/ani1.jpg);
+    background-image: url(../img/Animation/ani1.jpg);
     background-repeat: no-repeat;
     margin-left: 1px;
     margin-right: 1px;
@@ -115,47 +115,65 @@ h1 {
 
 @keyframes offerSlideShow {
     0% {
-        background-image: url(img/Animation/ani1.jpg);
+        background-image: url(../img/Animation/ani1.jpg);
     }
 
     20% {
-        background-image: url(img/Animation/ani2.png);
+        background-image: url(../img/Animation/ani2.png);
     }
 
     40% {
-        background-image: url(img/Animation/ani3.jpg);
+        background-image: url(../img/Animation/ani3.jpg);
     }
 
     60% {
-        background-image: url(img/Animation/ani4.jpg);
+        background-image: url(../img/Animation/ani4.jpg);
     }
 
     80% {
-        background-image: url(img/Animation/ani5.jpg);
+        background-image: url(../img/Animation/ani5.jpg);
     }
 
     100% {
-        background-image: url(img/Animation/ani3.jpg);
+        background-image: url(../img/Animation/ani3.jpg);
     }
 }
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
 
 
 
 .product-wrapper {
-    margin-top: 1em;
-    margin-left: 1em;
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    
 }
+
+
+    
+
 
 .product-card {
     border: 2px solid #e7e7e7;
     border-radius: 5px;
     padding: .5rem;
     width: fit-content;
+    height: fit-content;
     display: inline-block;
     margin-left: 2.2rem;
     background-color: #efeff7;
     font-weight: bold;
 }
+
 
 
 .product-card img {
@@ -213,115 +231,11 @@ footer {
     text-align: center;
     bottom: 0;
     margin-top: 1rem;
+    box-sizing: border-box;
+    
 }
 
 
-/* Form CSS */
-/* form-container */
-.form-container{
-    border: 1px solid #989898;
-    overflow-y: scroll;
-    height: 85vh;
-    width: 85%;
-    margin: 2.5rem 0rem 2rem 6rem;
-    background-image: url("img/Lab-Test/lab-test.jpg");
-    background-repeat: no-repeat; 
-    background-position: right; 
-    box-shadow: 1px 1px 10px 5px #d3cfcf;
-}
-
-form{
-    width: 50%;
-    margin: 3rem 2rem 3rem 3rem ;
-}
-
-input {
-    margin: 0.5rem;
-    border: none;
-    border-bottom: 2px solid rgb(230, 222, 222);
-    padding-top: .3rem;
-    padding-bottom: .1rem;
-    width: 16rem;
-}
-
-
-h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-}
-
-select {
-    width: 7rem;
-    padding: .1rem;
-    border-radius: 0;
-    margin-top: .5rem;
-    margin-left: .3rem;
-}
-
-
-
-.test-details h3 {
-    font-weight: bold;
-    margin-top: 0.6rem;
-    margin-top: 1.5rem;
-}
-
-.test-details h3 span{
-    font-weight: lighter;
-    font-size: small;
-}
-
-
-.test-checkbox{
-    text-indent: -5rem;
-}
-
-.date-time{
-    width: 6.5rem;   
-}
-
-
-input[type = "radio"],[ type ="checkbox"]{
-    width: 50px;
-    margin-left: 5rem;
-}
-
-label[for="date-time"]{
-    margin-left: 1.2rem;
-    margin-top: -1rem;
-}
-
-
-
-.form-btn {
-    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    width: 7rem;
-    background-color: rgb(193, 144, 238);
-    border: 2px solid rgb(150, 77, 218);
-}
-
-.form-btn:hover{
-    background-color: rgb(123, 21, 219);
-    border: 2px solid rgb(8, 1, 14);
-}
-.form-btn:active{
-    background-color: rgb(128, 82, 171);
-    border: 2px solid rgb(18, 9, 25);
-
-}
-
-#btn{
-    margin-left: 38rem;
-    margin-top: -2rem;
-}
 
 
 

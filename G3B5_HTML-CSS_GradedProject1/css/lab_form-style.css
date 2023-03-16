@@ -12,7 +12,7 @@
     height: 85vh;
     width: 85%;
     margin: 2.5rem 0rem 2rem 6rem;
-    background-image: url("img/Lab-Test/lab-test.jpg");
+    background-image: url("../img/Lab-Test/lab-test.jpg");
     background-repeat: no-repeat; 
     background-position: right; 
     box-shadow: 1px 1px 10px 5px #d3cfcf;
@@ -49,6 +49,7 @@ input{
 
 .test-checkbox{
     margin-left: -5rem;
+    cursor: pointer;
 }
 
 input[type = "radio"],[ type ="checkbox"]{
@@ -60,6 +61,7 @@ input[type = "radio"],[ type ="checkbox"]{
 
 select{
     border-radius: 0;
+    cursor: pointer;
 }
 
 input:focus{
@@ -69,6 +71,7 @@ input:focus{
 .date-time{
     width: 7rem;
     padding-left: .4rem;
+    cursor: pointer;
 }
 
 input[type="time"]{
@@ -90,6 +93,7 @@ input[type="time"]{
 .form-btn:hover{
     background-color: rgb(123, 21, 219);
     border: 2px solid rgb(111, 29, 183);
+    cursor: pointer;
 }
 
 .form-btn:active{
@@ -101,5 +105,5 @@ input[type="time"]{
 
 #btn{
     margin-left: 38rem;
-    margin-top: -2rem;
+    margin-top: -1rem;
 }
