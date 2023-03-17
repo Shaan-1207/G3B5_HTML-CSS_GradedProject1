@@ -244,28 +244,39 @@ footer {
 
 }
 
-/* @media(min-width: 1471px) {
+@media(max-width: 1051px) {
     header {
-        max-width: 1471px;
+        max-width: 1050px;
     }
 
     .menu-bar {
-        max-width: 1471px;
+        max-width: 1050px;
     }
 
     .offer-slider {
-        max-width: 1471px;
+        max-width: 1050px;
 
     }
 
     .product-wrapper {
         margin-left: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        
     }
 
     footer {
-       max-width: 1471px;
+         max-width: 1050px;
     }
-} */
+}
+
+@media(max-width: 732px){
+    .product-wrapper {
+        margin-left: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
 
 
 
