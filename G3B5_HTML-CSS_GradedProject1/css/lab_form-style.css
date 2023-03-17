@@ -66,6 +66,11 @@ input[type = "radio"],[ type ="checkbox"]{
 select{
     border-radius: 0;
     cursor: pointer;
+    margin-top: .5rem;
+}
+
+label[for="district"]{
+    font-weight: bold;
 }
 
 input:focus{

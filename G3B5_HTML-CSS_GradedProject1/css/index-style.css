@@ -76,6 +76,7 @@ h1 {
     background-color: #999999;
     margin-top: 10px;
     margin-left: -10px;
+    
 }
 
 
@@ -247,17 +248,18 @@ footer {
 @media(min-width: 1051px) and (max-width:1200px) {
     header {
         min-width: 1050px;
-        max-width:1200px
+        max-width:1200px;
+        
     }
 
     .menu-bar {
         min-width: 1050px;
-        max-width:1200px
+        max-width:1200px;
     }
 
     .offer-slider {
         min-width: 1050px;
-        max-width:1200px
+        max-width:1200px;
 
     }
 
@@ -270,11 +272,15 @@ footer {
 
     footer {
         min-width: 1050px;
-        max-width:1200px
+        max-width:1200px;
     }
 }
 
 @media(min-width: 732px) and (max-width: 1051px){
+
+    body{
+        width: 1050px;
+    }
 
     header{
         min-width: 732px;
@@ -307,26 +313,30 @@ footer {
 
 
 @media(min-width:390px) and ( max-width:414px) {
+    body{
+        width: 1050px;
+    }
+
     header{
         min-width: 390px;
-        max-width:414px
+        max-width:414px;
     }
 
   
 
     .menu-bar {
         min-width: 390px;
-        max-width:414px
+        max-width:414px;
     }
 
     .offer-slider {
         min-width: 390px;
-        max-width:414px
+        max-width:414px;
 
     }
     .menu-bar{
         min-width: 390px;
-        max-width:414px
+        max-width:414px;
     }
 
 
