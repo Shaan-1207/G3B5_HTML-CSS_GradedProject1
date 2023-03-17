@@ -19,7 +19,7 @@
                 </li>
                 <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
                 <input type="text" name="patientId" id="patientId" placeholder="Patient Id if Exists"><br>
-                <input type="tel" required minlength="0000000009" maxlength="999999999999" placeholder="Contact Number">
+                <input type="tel" pattern="\d{10}" placeholder="Contact Number" required>
                 <input type="email" placeholder="Email Id" required>
 
                 <li>
