@@ -1,3 +1,4 @@
+/* Remove Default Margin/Padding */
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +6,7 @@
     font-family: sans-serif;
 }
 
+/* Form CSS */
 .form-container{
     display: flex;
     border: 1px solid #989898;
@@ -19,6 +21,7 @@
     
     
 }
+
 
 form{
     margin: 2rem 1rem 2rem 4rem;
@@ -37,6 +40,7 @@ h3 span{
     font-weight: lighter;
     font-size: small;
 }
+
 
 input{
     width: 15rem;
@@ -58,9 +62,6 @@ input[type = "radio"],[ type ="checkbox"]{
     width: 50px;
     margin-left: 5rem;
 }
-
-
-
 
 
 select{
@@ -88,6 +89,7 @@ input[type="time"]{
 }
 
 
+/* Button CSS */
 .form-btn {
     padding: 0.2rem 1.2rem 0.2rem 1.2rem;
     margin: 0.5rem;
@@ -117,6 +119,8 @@ input[type="time"]{
     margin-top: -1rem;
 }
 
+
+/* Media queries */
 @media screen and (min-width: 1024px){
     form{
         margin: 2.2rem 2rem 2rem 3rem;
