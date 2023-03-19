@@ -108,56 +108,6 @@ h1 {
 
 
 
-/* Hamburger menu */
-nav .navbar-toggler {
-    display: none;
-    height: min-content;
-    margin: 15px -10px 0 0;
-    cursor: pointer;
-}
-
-nav .navbar-toggler .bar {
-    width: 30px;
-    height: 2px;
-    margin-bottom: 7px;
-    background: #ffffff;
-    border-radius: 10%;
-    transition: .4s;
-}
-
-input {
-    display: none;
-}
-
-input:checked ~ nav .nav-list {
-    transform: translateY(0);
-    z-index: 1;
-    margin-top: 110px;
-}
-
-@media(max-width:340px){
-    input:checked ~ nav .nav-list {
-        margin-top: 55px;
-    }
-}
-
-input:checked ~ nav .navbar-toggler {
-    margin-top: 35px;
-    
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-    position: absolute;
-    transform: rotate(45deg);
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-    display: none;
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-    transform: rotate(-45deg);
-}
 
 
 /* Offer slider */
@@ -220,10 +170,9 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
     row-gap: 10px;
+    margin-left: .5%;
 
 }
-
-
 
 
 
