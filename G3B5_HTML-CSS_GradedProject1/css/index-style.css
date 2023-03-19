@@ -33,7 +33,6 @@ h1 {
 .menu-bar ul {
     display: inline-flex;
     list-style: none;
-    margin-right: 850px;
 }
 
 .menu-bar ul li {
@@ -90,7 +89,6 @@ h1 {
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li {
-    width: 155px;
     padding: 10px;
     text-align: left;
 }
@@ -109,15 +107,67 @@ h1 {
 }
 
 
+
+/* Hamburger menu */
+nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 15px -10px 0 0;
+    cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 7px;
+    background: #ffffff;
+    border-radius: 10%;
+    transition: .4s;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+    z-index: 1;
+    margin-top: 110px;
+}
+
+@media(max-width:340px){
+    input:checked ~ nav .nav-list {
+        margin-top: 55px;
+    }
+}
+
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+    
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+
 /* Offer slider */
 .offer-slider {
     border: 2px solid steelblue;
-    width: 100%;
+    width: 99.9%;
     height: 60vh;
     background-image: url(../img/Animation/ani1.jpg);
     background-repeat: no-repeat;
     margin-left: 1px;
-    margin-right: 1px;
     margin-top: 1px;
     background-size: 100% 100%;
     animation: offerSlideShow 30s infinite;
@@ -181,10 +231,9 @@ h3 {
     border: 2px solid #e7e7e7;
     border-radius: 5px;
     padding: .5rem;
-    width: fit-content;
+    width: 90%;
     height: fit-content;
     display: inline-block;
-    margin-left: 2.2rem;
     background-color: #efeff7;
     font-weight: bold;
 }
@@ -192,14 +241,14 @@ h3 {
 
 
 .product-card img {
-    width: 17.2rem;
+    width: 100%;
     height: 10rem;
     cursor: pointer;
 
 }
 
 .product-card img:hover {
-    width: 17.4rem;
+    width: 101%;
     height: 10.4rem;
 
 }
@@ -207,7 +256,7 @@ h3 {
 
 
 .product-card button {
-    width: 275px;
+    width: 90%;
     border-radius: 5px;
     height: 30px;
     margin-left: 0.7rem;
